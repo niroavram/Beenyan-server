@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000
 
 //AjGY4GvXw5Kr8edj - Password
 const cors = require('cors')
-app.use(cors())
+app.use(cors("http://localhost:3000/"||"https://www.beenyan.com/"))
 
 require('./models/Deal')
 require('./models/User')
