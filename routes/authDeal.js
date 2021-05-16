@@ -36,7 +36,7 @@ router.post("/createdeal", requireLogin, (req, res) => {
     pic,
   } = req.body;
   if (!title || !body || !location || !numOfUnit || !dimension || !price) {
-    return res.status(422).json({ error: "Please add all the fields" });
+    return res.status(422).json({ error: "Please add all the fields!" });
   }
   /*req.user.password = undefined*/
   console.log(req.user);
