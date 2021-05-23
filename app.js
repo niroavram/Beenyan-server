@@ -1,5 +1,5 @@
 const express = require('express')
-
+var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
 const app = express()
 const mongoose = require('mongoose')
 const {MONGOURI} = require('./keys')
